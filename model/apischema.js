@@ -16,7 +16,9 @@ const apiSchema= new mongoose.Schema({
     city:{
         type:String,
         // required:true
-    }
+    },
+    created_at: { type: Date, default: Date.now },
+  
 });
 
 const Api = mongoose.model('Api', apiSchema);
