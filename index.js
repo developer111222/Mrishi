@@ -14,11 +14,20 @@ bd()
 
 
 const corsoptions = {
-    origin: 'https://mrishimrcandeyenclave.com/',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various older browsers) choke on 204
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: ['https://mrishimrcandeyenclave.com', 'https://mrishimrcandeyenclave.com/'],
+    methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
+    Headers: true,
+   
+     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"], // Allow only specified HTTP methods
+     allowedHeaders: [
+       "Access-Control-Allow-Origin",
+       "Content-Type",
+       "Authorization",
+       "cookies",
+     ],
+     credentials: true, // Allow sending cookies and other credentials
+     optionsSuccessStatus: 200,
+     preflightContinue: false,
 }
 //api route
 app.use(cors(corsoptions));
