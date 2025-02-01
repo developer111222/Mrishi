@@ -14,7 +14,7 @@ bd()
 
 
 const corsoptions = {
-    origin: '*',
+    origin: ['https://mrishimrcandeyenclave.com', 'https://mrishimrcandeyenclave.com/'],
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
     Headers: true,
    
@@ -25,7 +25,7 @@ const corsoptions = {
        "Authorization",
        "cookies",
      ],
-     credentials: true, // Allow sending cookies and other credentials
+    //  credentials: true, // Allow sending cookies and other credentials
      optionsSuccessStatus: 200,
      preflightContinue: false,
 }
