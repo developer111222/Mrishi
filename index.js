@@ -12,7 +12,7 @@ bd()
 
 
 const corsoptions = {
-    origin: '*',
+    origin: 'https://mrishimrcandeyenclave.com/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various older browsers) choke on 204
