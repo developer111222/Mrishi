@@ -27,7 +27,7 @@ return res.status(201).json({message:'API created successfully',api});
 exports.getApis=async (req,res)=>{
     try{
         const apis=await Api.find();
-        return res.status(200).json({success:true},apis);
+        return res.status(200).json({success:true,apis});
     }catch(error){
         return res.status(500).json({message:error.message});
     }
