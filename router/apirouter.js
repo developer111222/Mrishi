@@ -1,7 +1,8 @@
 const express = require('express');
 const router=express.Router();
-const {apicontroller}=require('../controller/apicontrollert');
+const {apicontroller,getApis}=require('../controller/apicontrollert');
 
-router.route('/orm').post(apicontroller)
+router.route('/orm').post(apicontroller);
+router.route('/get-db').get(getApis);
 
 module.exports=router;

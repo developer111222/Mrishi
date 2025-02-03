@@ -1,7 +1,7 @@
 const express = require('express');
 const Api=require('../model/apischema');
 
-const apicontroller=async (req,res)=>{
+exports.apicontroller=async (req,res)=>{
     try{
 const data=req.body;
 
@@ -21,4 +21,14 @@ return res.status(201).json({message:'API created successfully',api});
 
 }
 
-module.exports={apicontroller};
+
+//---------------------------get ----------------------
+
+exports.getApis=async (req,res)=>{
+    try{
+        const apis=await Api.find();
+        return res.status(200).json({success:true},apis);
+    }catch(error){
+        return res.status(500).json({message:error.message});
+    }
+}
