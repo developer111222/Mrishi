@@ -1,5 +1,5 @@
 const express = require('express');
-const Inrheight=require('../model/inrheight');
+const Inrheight=require('../model/inrheightschema');
 
 exports.apicontroller=async (req,res)=>{
     try{
