@@ -15,7 +15,11 @@ bd()
 
 
 const corsoptions = {
-    origin: ['https://mrishimrcandeyenclave.com', 'https://mrishimrcandeyenclave.com/'],
+  origin: [
+    'https://mrishimrcandeyenclave.com', 
+    'https://inrheight.allindigi.com'
+],
+
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
     Headers: true,
    
