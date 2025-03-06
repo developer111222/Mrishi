@@ -3,6 +3,7 @@ const cors=require('cors');
 const bd=require('./database/Db')
 const app = express();
 const apiroute=require('./router/apirouter');
+const inrheightroute=require('./router/inrheightroute');
 require('dotenv').config()
 
 
@@ -33,6 +34,7 @@ const corsoptions = {
 app.use(cors(corsoptions));
 
 app.use('/api',apiroute);
+app.use('/api',inrheightroute);
 
 //server
 const port=process.env.PORT || 5000;
