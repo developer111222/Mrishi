@@ -1,8 +1,8 @@
 const express = require('express');
 const router=express.Router();
-const {apicontroller,getApis}=require('../controller/accordcontroller');
+const {accordcontroller,getaccord}=require('../controller/accordcontroller');
 
-router.route('/form').post(apicontroller);
-router.route('/get-db').get(getApis);
+router.route('/form').post(accordcontroller);
+router.route('/get-db').get(getaccord);
 
 module.exports=router;
