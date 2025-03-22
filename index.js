@@ -4,6 +4,8 @@ const bd=require('./database/Db')
 const app = express();
 const apiroute=require('./router/apirouter');
 const inrheightroute=require('./router/inrheightroute');
+const accord=require('./router/accordroute');
+
 require('dotenv').config()
 
 
