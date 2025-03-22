@@ -19,7 +19,8 @@ bd()
 const corsoptions = {
   origin: [
     'https://mrishimrcandeyenclave.com', 
-    'https://inrheight.allindigi.com'
+    'https://inrheight.allindigi.com',
+    'https://accord-psi-vert.vercel.app'
 ],
 
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
@@ -41,6 +42,7 @@ app.use(cors(corsoptions));
 
 app.use('/api',apiroute);
 app.use('/api',inrheightroute);
+app.use('/api',accordroute);
 
 //server
 const port=process.env.PORT || 5000;
