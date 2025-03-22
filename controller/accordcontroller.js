@@ -4,7 +4,7 @@ const Accord=require('../model/accordschema');
 exports.apicontroller=async (req,res)=>{
     try{
 const data=req.body;
-
+console.log(data)
 
 if(!data){
     return res.status(400).json({message:'No data provided'});
