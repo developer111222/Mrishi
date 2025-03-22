@@ -1,5 +1,5 @@
 const express = require('express');
-const Inrheight=require('../model/inrheightschema');
+const Accord=require('../model/accordschema');
 
 exports.apicontroller=async (req,res)=>{
     try{
@@ -10,7 +10,7 @@ if(!data){
     return res.status(400).json({message:'No data provided'});
 }
 
-const api=new Inrheight(data);
+const api=new Accord(data);
 await api.save();
 
 return res.status(201).json({message:'API created successfully',api});
@@ -26,7 +26,7 @@ return res.status(201).json({message:'API created successfully',api});
 
 exports.getApis=async (req,res)=>{
     try{
-        const apis=await Inrheight.find();
+        const apis=await Accord.find();
         return res.status(200).json({success:true,apis});
     }catch(error){
         return res.status(500).json({message:error.message});
