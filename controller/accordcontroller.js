@@ -1,7 +1,7 @@
 const express = require('express');
 const Accord=require('../model/accordschema');
 
-exports.apicontroller=async (req,res)=>{
+exports.accordcontroller=async (req,res)=>{
     try{
 const data=req.body;
 console.log(data)
@@ -24,7 +24,7 @@ return res.status(201).json({message:'API created successfully',api});
 
 //---------------------------get ----------------------
 
-exports.getApis=async (req,res)=>{
+exports.getaccord=async (req,res)=>{
     try{
         const apis=await Accord.find();
         return res.status(200).json({success:true,apis});
