@@ -21,6 +21,6 @@ const accordschema= new mongoose.Schema({
   
 });
 
-const accord = mongoose.model('Inrheight', accordschema);
+const Accord = mongoose.model('Accord', accordschema);
 
-module.exports = accord;
+module.exports = Accord;
