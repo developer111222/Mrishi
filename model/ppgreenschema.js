@@ -18,6 +18,6 @@ const ppgreenschema= new mongoose.Schema({
   
 });
 
-const PPGreen = mongoose.model('Accord', ppgreenschema);
+const PPGreen = mongoose.model('PPGreen', ppgreenschema);
 
 module.exports = PPGreen;
