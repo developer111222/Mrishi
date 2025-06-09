@@ -5,6 +5,7 @@ const app = express();
 const apiroute=require('./router/apirouter');
 const inrheightroute=require('./router/inrheightroute');
 const accordroute=require('./router/accordroute');
+const ppgreenroute=require('./router/ppgreenroute');
 
 require('dotenv').config()
 
@@ -43,6 +44,7 @@ app.use(cors(corsoptions));
 app.use('/api',apiroute);
 app.use('/api',inrheightroute);
 app.use('/api',accordroute);
+app.use('/api',ppgreenroute);
 
 //server
 const port=process.env.PORT || 5000;
