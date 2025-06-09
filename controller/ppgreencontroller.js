@@ -4,7 +4,7 @@ const PPGreen=require('../model/ppgreenschema');
 exports.apicontroller=async (req,res)=>{
     try{
 const data=req.body;
-console.log(data)
+console.log(req.body)
 
 if(!data){
     return res.status(400).json({message:'No data provided'});
