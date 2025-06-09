@@ -9,7 +9,7 @@ const ppgreenschema= new mongoose.Schema({
         type:String,
         // required:true
     },
-    phone:{
+    number:{
         type:Number,
         // required:true
     },
