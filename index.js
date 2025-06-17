@@ -22,7 +22,8 @@ const corsoptions = {
     'https://mrishimrcandeyenclave.com', 
     'https://inrheight.allindigi.com',
     'https://accord-psi-vert.vercel.app',
-    'https://ppgreencity2.com'
+    'https://ppgreencity2.com',
+    'https://visit.ppgreencity.com'
 ],
 
     methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
